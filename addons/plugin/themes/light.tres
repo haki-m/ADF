@@ -1,0 +1,54 @@
+[gd_resource type="Theme" load_steps=7 format=2]
+
+[ext_resource path="res://addons/plugin/fonts/light_font.tres" type="DynamicFont" id=1]
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.713726, 0.713726, 0.713726, 1 )
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color( 0.0627451, 0.0627451, 0.0627451, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+anti_aliasing_size = 1.0
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.4, 0.4, 0.4, 1 )
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color( 0.0627451, 0.0627451, 0.0627451, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+anti_aliasing_size = 1.0
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.835938, 0.835938, 0.835938, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+
+[resource]
+Button/colors/font_color = Color( 0, 0, 0, 1 )
+Button/colors/font_color_disabled = Color( 0, 0, 0, 1 )
+Button/colors/font_color_focus = Color( 0, 0, 0, 1 )
+Button/colors/font_color_hover = Color( 0, 0, 0, 1 )
+Button/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+Button/styles/disabled = SubResource( 4 )
+Button/styles/focus = SubResource( 5 )
+Button/styles/hover = SubResource( 4 )
+Button/styles/normal = SubResource( 4 )
+Button/styles/pressed = SubResource( 5 )
+Label/colors/font_color = Color( 0, 0, 0, 1 )
+Label/fonts/font = ExtResource( 1 )
+Panel/styles/panel = SubResource( 1 )
+ScrollContainer/styles/bg = SubResource( 2 )
+VScrollBar/styles/scroll = SubResource( 3 )
