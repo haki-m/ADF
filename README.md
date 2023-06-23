@@ -1,5 +1,9 @@
 # ADF
 > ## **A**ndroid **D**ialog **F**ile
+> ### By Abdelhakim Mahha
+> 
+![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQYF6HC16pqmlsiRh8aHfMm7Z-nYpjPKZqhD2Ej-efG0UBPALQmow4d2lu8YxJucxto3hKfvoz8beTc2fxXm8Al1xuIBkgqGaNHD08QlvfjrMHqd1rYg9eS6chd25KaKe-nCaTBtmPmPZU1-kEk15eJ1bInui92mJvyxy297_S7kSfnhEuw3zo8xobq3ET/s696/MN.JPG)
+
 !this is not a android plugin it's a godot addons plugin
 is a diloge file plugin for godot _we can use it for all template_ but it created for android because we have already a dialoge file popup in godot.
 
@@ -98,3 +102,5 @@ the Result is :
 
 ![img](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLvmIGNFT32UJlUowu3nj0a_ZxAL2n0buGDYLS1RhwZ68BSw_kU-P_Tc9VLh3eR0dW7S-WtD0yOQBt4wEu5fYgwGLCmRZE_wMcKjGgxTYZuqTNWLfmiLswh4h84fWdmF1JgI2X9S4OrAAV30myNtW6_KAcBitVFcPm2ot605NCbdrnfjUf_Jn64GTKgPIg/s1002/pdf.JPG)
 
+
+Ceated By Abdelhakim Mahha
