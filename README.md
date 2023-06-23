@@ -7,10 +7,11 @@
 !this is not a android plugin it's a godot addons plugin
 is a diloge file plugin for godot _we can use it for all template_ but it created for android because we have already a dialoge file popup in godot.
 
-## How to use it :
-1. Download the addons folder from [Here](https://github.com/haki-m/ADF) ant copy it into your godot project in the following path _res://_
-2. go to:  _Project > Project Setting > Plugins_ and press "enable"
-3. Now when you click on _Add new child_ you will see an other node added tou your godot nodes
+## How to use :
+1. Download ADF-main.zip [Here](https://github.com/haki-m/ADF) and extract files
+2. Copy `addons` folder from ADF-mai into your godot project in the following path _res://_
+3. go to:  _Project > Project Setting > Plugins_ and press "enable"
+4. Now when you click on _Add new child_ you will see an other node added tou your godot nodes
 
 ![IMG4](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMU_pOLXa4zxUb-oG-gQOJpNfVnrg7iaNCWsGQcxZBV-640cNVxmZUE3ZmFSLO8Oh_1iA3h-ETj0Jbr41V7QOGwlADbVFqduIqf-2WhfYfSWskhJzhLJPeMUI0uHw85UYIuoj1vRhajpR0GMjnrjvH60_sIzGBuxxSyOKqBV-OfLneLbhprFeQNvGxuDzE/s678/ADF.JPG)
 
