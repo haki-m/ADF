@@ -1,7 +1,7 @@
 # ADF
 > ## **A**ndroid **D**ialog **F**ile
 > ### By Abdelhakim Mahha
-> 
+
 ![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQYF6HC16pqmlsiRh8aHfMm7Z-nYpjPKZqhD2Ej-efG0UBPALQmow4d2lu8YxJucxto3hKfvoz8beTc2fxXm8Al1xuIBkgqGaNHD08QlvfjrMHqd1rYg9eS6chd25KaKe-nCaTBtmPmPZU1-kEk15eJ1bInui92mJvyxy297_S7kSfnhEuw3zo8xobq3ET/s696/MN.JPG)
 
 !this is not a android plugin it's a godot addons plugin
@@ -11,6 +11,9 @@ is a diloge file plugin for godot _we can use it for all template_ but it create
 1. Download the addons folder from Here ant copy it into your godot project in the following path _res://_
 2. go to:  _Project > Project Setting > Plugins_ and press "enable"
 3. Now when you click on _Add new child_ you will see an other node added tou your godot nodes
+
+![IMG4](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMU_pOLXa4zxUb-oG-gQOJpNfVnrg7iaNCWsGQcxZBV-640cNVxmZUE3ZmFSLO8Oh_1iA3h-ETj0Jbr41V7QOGwlADbVFqduIqf-2WhfYfSWskhJzhLJPeMUI0uHw85UYIuoj1vRhajpR0GMjnrjvH60_sIzGBuxxSyOKqBV-OfLneLbhprFeQNvGxuDzE/s678/ADF.JPG)
+
 4. Add (enable) permessions in the android export
 
 - [x] Read Externale Storage
