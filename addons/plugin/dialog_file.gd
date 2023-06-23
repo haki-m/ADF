@@ -63,19 +63,22 @@ var multi_files_name=[]
 
 #begin
 func _enter_tree():
+	OS.request_permissions()
 	content=load("res://addons/plugin/content.tscn")
 	connect("resized",self,"size_changed")
-	OS.request_permissions()
+	connect("about_to_show",self,"pop_show")
 	current_path=desktop_path
 	connect_childs()
-	list(current_path)
+	
 	begins_settings()
 	scrol.scroll_horizontal=false
 	theme=themes[dialog_theme]
 	#this line make allow phone to go back to folder by clicking on back systeme android button and not to quit 
 	if allow_back_on_android==true:
 		get_tree().set_quit_on_go_back(false)
-	
+	pass
+func pop_show():
+	list(current_path)
 	pass
 #theme setget
 func set_themex(new_dialog_theme):
@@ -114,7 +117,9 @@ func clear_content():
 func add_icons(tex_button:TextureButton,n:String):
 	if n.get_extension() in ["apk","aab"]:
 		tex_button.texture_normal=android
-	elif n.get_extension() in ["doc","docx","rtf","xml","txt"]:
+	elif n.get_extension() in ["txt"]:
+		tex_button.texture_normal=text
+	elif n.get_extension() in ["doc","docx","rtf","xml"]:
 		tex_button.texture_normal=doc
 	elif n.get_extension() in ["exe","lnk","msi"]:
 		tex_button.texture_normal=exe
@@ -262,6 +267,7 @@ func home_return(path):
 	pass
 func on_Select_files_clicked():
 	emit_signal("selected_multi_xfiles",multi_fliles,multi_files_name)
+	hide()
 	pass
 func on_clos_dialog_clicked():
 	multi_files_name.clear()
@@ -270,7 +276,7 @@ func on_clos_dialog_clicked():
 	hide()
 	pass
 func on_select_folder_clicked():
-	emit_signal("selected_xfolder",current_path,nameofpath(current_path))
+	emit_signal("selected_xfolder",current_path+"/",nameofpath(current_path))
 	hide()
 	print("folder selected path is: "+current_path)
 	print("folder selected name is: " + nameofpath(current_path))
@@ -324,9 +330,7 @@ func margin_it(child,left,top,right,bottom):
 	child.margin_right=right
 	child.margin_bottom=bottom
 	pass
-func content_pressed():
-	
-	pass
+
 func refreshx():
 	if Engine.editor_hint:
 		#clear_content()
