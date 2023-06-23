@@ -4,7 +4,7 @@
 is a diloge file plugin for godot _we can use it for all template_ but it created for android because we have already a dialoge file popup in godot.
 
 ## How to use it :
-1. Download the addons file from Here ant put it into your godot project in the following path _res://_
+1. Download the addons folder from Here ant copy it into your godot project in the following path _res://_
 2. go to:  _Project > Project Setting > Plugins_ and press "enable"
 3. Now when you click on _Add new child_ you will see an other node added tou your godot nodes
 4. Add (enable) permessions in the android export
@@ -63,4 +63,38 @@ func _on_ADF_dialog_closed():
 	
 	pass # Replace with function body.
 ```
+
+## Settings
+
+![image settings](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-dbm7MU3tBPRbi_l0nYtc30PiobmlQJc_32N0gF7l2gMEoK97BOjGDqXGyP_a7Av507cuJvg71Odi3PMReOd0EvDOuN7jGEKbs8iY8rFZ-RCUknD0OaDKa9EOcm_EiSPRi0ZokRUM8rs7WdbkXyU1G021o_JEDrE1OA_eJB0eYA0PFB5N-QtLojiVd6NA/s360/settings.JPG)
+
+## Dialog Type
+
+* Select File
+* Select Folder
+* Select more than one file
+
+## Columns
+* Number of columns showen in dialog file
+
+## Font Size
+* Font size for the foldes and files name
+
+## Allow back on android
+* if this bool is thrue the button system for android device do the back function to the previous folder
+
+## Dialog Theme
+Dark theme
+Light theme
+
+## Files filter
+it is an Array of file format that you one to see on your dialog file if it empty (default) you will see all files types 
+
+for example : if i chose _pdf_
+
+![img](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUNmLgDdsjCdvBxO9qTdyZO0nOLMPrriqAZ55aYZ6kuvMoeSR4HM-xzXi5JdEaTCMtgrNoeMttHtoXgixxVT3ntnOv-C688t8UuTRzas7TT4hbv6xcEyYQhA2QY5QG3N3wOTOda9FJilCPc1lGVFglkXcyja5Oy7TgpX5aI8JkMvXdatsc2XB3yrZ4bZ3p/s344/filters.JPG)
+
+the Result is :
+
+![img](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLvmIGNFT32UJlUowu3nj0a_ZxAL2n0buGDYLS1RhwZ68BSw_kU-P_Tc9VLh3eR0dW7S-WtD0yOQBt4wEu5fYgwGLCmRZE_wMcKjGgxTYZuqTNWLfmiLswh4h84fWdmF1JgI2X9S4OrAAV30myNtW6_KAcBitVFcPm2ot605NCbdrnfjUf_Jn64GTKgPIg/s1002/pdf.JPG)
 
