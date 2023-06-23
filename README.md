@@ -4,8 +4,10 @@
 
 ![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQYF6HC16pqmlsiRh8aHfMm7Z-nYpjPKZqhD2Ej-efG0UBPALQmow4d2lu8YxJucxto3hKfvoz8beTc2fxXm8Al1xuIBkgqGaNHD08QlvfjrMHqd1rYg9eS6chd25KaKe-nCaTBtmPmPZU1-kEk15eJ1bInui92mJvyxy297_S7kSfnhEuw3zo8xobq3ET/s696/MN.JPG)
 
-!this is not a android plugin it's a godot addons plugin
+!this is not an android plugin it's a godot addons plugin
 is a diloge file plugin for godot _we can use it for all template_ but it created for android because we have already a dialoge file popup in godot.
+
+You can test it on android Here : [ADF-test.apk](https://welson-staly.itch.io/adf)
 
 ## How to use :
 1. Download ADF-main.zip [Here](https://github.com/haki-m/ADF) and extract files
