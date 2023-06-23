@@ -8,7 +8,7 @@
 is a diloge file plugin for godot _we can use it for all template_ but it created for android because we have already a dialoge file popup in godot.
 
 ## How to use it :
-1. Download the addons folder from Here ant copy it into your godot project in the following path _res://_
+1. Download the addons folder from [Here](https://github.com/haki-m/ADF) ant copy it into your godot project in the following path _res://_
 2. go to:  _Project > Project Setting > Plugins_ and press "enable"
 3. Now when you click on _Add new child_ you will see an other node added tou your godot nodes
 
