@@ -1,0 +1,149 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://addons/plugin/themes/dark.tres" type="Theme" id=1]
+[ext_resource path="res://addons/plugin/dialog_file.gd" type="Script" id=2]
+[ext_resource path="res://fnt/fn2.TTF" type="DynamicFontData" id=3]
+[ext_resource path="res://main.gd" type="Script" id=4]
+[ext_resource path="res://addons/plugin/themes/light.tres" type="Theme" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 3 )
+
+[node name="main" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ADF_save_file" type="Popup" parent="CanvasLayer/Control"]
+margin_top = 6.0
+margin_right = 723.0
+margin_bottom = 1251.0
+theme = ExtResource( 1 )
+popup_exclusive = true
+script = ExtResource( 2 )
+font_size = 25
+
+[node name="ADF_open_file" type="Popup" parent="CanvasLayer/Control"]
+margin_right = 723.0
+margin_bottom = 1251.0
+theme = ExtResource( 1 )
+popup_exclusive = true
+script = ExtResource( 2 )
+dialog_type = 1
+font_size = 25
+
+[node name="ADF_open_multi_files" type="Popup" parent="CanvasLayer/Control"]
+margin_right = 723.0
+margin_bottom = 1251.0
+theme = ExtResource( 5 )
+popup_exclusive = true
+script = ExtResource( 2 )
+dialog_type = 2
+font_size = 25
+dialog_theme = 1
+
+[node name="ADF_open_folder" type="Popup" parent="CanvasLayer/Control"]
+margin_right = 723.0
+margin_bottom = 1251.0
+theme = ExtResource( 5 )
+popup_exclusive = true
+script = ExtResource( 2 )
+font_size = 25
+dialog_theme = 1
+
+[node name="ADF_open_images" type="Popup" parent="CanvasLayer/Control"]
+margin_right = 723.0
+margin_bottom = 1251.0
+theme = ExtResource( 1 )
+popup_exclusive = true
+script = ExtResource( 2 )
+dialog_type = 1
+font_size = 25
+filter_files = PoolStringArray( "jpg", "ipeg", "png", "ico", "webp", "bmp" )
+
+[node name="Label" type="Label" parent="CanvasLayer/Control"]
+anchor_right = 0.99
+anchor_bottom = 0.256
+margin_right = 7.19995
+margin_bottom = 0.319977
+custom_fonts/font = SubResource( 1 )
+text = "Press any button the get Dialog file for every operation"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="save_file" type="Button" parent="CanvasLayer/Control"]
+anchor_left = 0.5
+anchor_top = 0.423
+anchor_right = 0.5
+anchor_bottom = 0.423
+margin_left = -288.0
+margin_top = -144.44
+margin_right = 288.0
+margin_bottom = -8.44
+custom_fonts/font = SubResource( 1 )
+text = "Save file"
+
+[node name="open_file" type="Button" parent="CanvasLayer/Control"]
+anchor_left = 0.502
+anchor_top = 0.584
+anchor_right = 0.502
+anchor_bottom = 0.584
+margin_left = -289.44
+margin_top = -162.52
+margin_right = 286.56
+margin_bottom = -26.5201
+custom_fonts/font = SubResource( 1 )
+text = "Open File"
+
+[node name="open_folder" type="Button" parent="CanvasLayer/Control"]
+anchor_left = 0.502
+anchor_top = 0.739
+anchor_right = 0.502
+anchor_bottom = 0.739
+margin_left = -289.44
+margin_top = -170.92
+margin_right = 286.56
+margin_bottom = -34.92
+custom_fonts/font = SubResource( 1 )
+text = "Open Folder"
+
+[node name="open_multi_files" type="Button" parent="CanvasLayer/Control"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -288.0
+margin_top = -154.0
+margin_right = 288.0
+margin_bottom = -18.0
+custom_fonts/font = SubResource( 1 )
+text = "Open Multi Files"
+
+[node name="open_img_file" type="Button" parent="CanvasLayer/Control"]
+anchor_left = 0.502
+anchor_top = 0.894
+anchor_right = 0.502
+anchor_bottom = 0.894
+margin_left = -289.44
+margin_top = -198.32
+margin_right = 286.56
+margin_bottom = -62.3201
+custom_fonts/font = SubResource( 1 )
+text = "Open image (filter images)"
+
+[connection signal="selected_xfolder" from="CanvasLayer/Control/ADF_save_file" to="." method="_on_ADF_save_file_selected_xfolder"]
+[connection signal="selected_xfile" from="CanvasLayer/Control/ADF_open_file" to="." method="_on_ADF_open_file_selected_xfile"]
+[connection signal="selected_multi_xfiles" from="CanvasLayer/Control/ADF_open_multi_files" to="." method="_on_ADF_open_multi_files_selected_multi_xfiles"]
+[connection signal="selected_xfolder" from="CanvasLayer/Control/ADF_open_folder" to="." method="_on_ADF_open_folder_selected_xfolder"]
+[connection signal="selected_xfile" from="CanvasLayer/Control/ADF_open_images" to="." method="_on_ADF_open_images_selected_xfile"]
+[connection signal="pressed" from="CanvasLayer/Control/save_file" to="." method="_on_save_file_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/open_file" to="." method="_on_open_file_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/open_folder" to="." method="_on_open_folder_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/open_multi_files" to="." method="_on_open_multifiles_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/open_img_file" to="." method="_on_open_img_file_pressed"]
